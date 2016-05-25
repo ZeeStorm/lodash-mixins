@@ -1,5 +1,5 @@
 
-function () {
+(function () {
     Array.prototype.alphanumSort = function (propertyOrPosition) {
         var caseInsensitive = true; //hardcoded to true until there is a need in the app for a case-sensitive sort (SB)
         for (var z = 0, t; t = propertyOrPosition ? this[z] ? this[z][propertyOrPosition] : this[z] : this[z]; z++) {

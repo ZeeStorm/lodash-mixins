@@ -45,7 +45,7 @@
 
         for (var z = 0; z < this.length; z++) {
             if (propertyOrPosition) {
-                if (this[z][propertyOrPosition]) {
+                if (Array.isArray(this[z][propertyOrPosition])) {
                     this[z][propertyOrPosition] = this[z][propertyOrPosition].join("");
                 } else {
                     this[z][propertyOrPosition] = "";
@@ -109,4 +109,3 @@
         }
     });
 })();
-
